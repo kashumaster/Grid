@@ -1,0 +1,60 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border: 2px solid rgb(255, 72, 0);
+    background-color: rgb(247, 203, 162);
+}
+
+.wrapper > div, .wrapper2 > div, .wrapper3 > div, .wrapper4 > div, .wrapper5 > div, .wrapper6 > div {
+    border: 2px solid rgb(255, 115, 0);
+    background-color: rgb(250, 185, 132);
+}
+
+.wrapper2 { /*<!--Sizing rows in implicit grid using grid-auto-rows--> */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: 100px;
+    border: 2px solid rgb(255, 72, 0);;
+    background-color: rgb(247, 203, 162);
+}
+
+.wrapper3 { /*Sizing rows using minmax()*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border: 2px solid rgb(255, 72, 0);;
+    background-color: rgb(247, 203, 162);
+    grid-auto-rows: minmax(100px auto);
+
+}
+
+.wrapper4 { /*Sizing rows using a track listing*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border: 2px solid rgb(255, 72, 0);;
+    background-color: rgb(247, 203, 162);
+    grid-auto-rows: 100px 200px;
+}
+
+.wrapper5 { /*Auto placement by column*/
+    display: grid;
+    gap: 10px;
+    border: 2px solid rgb(255, 72, 0);
+    background-color: rgb(247, 203, 162);
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-flow: column;
+    grid-auto-columns: 300px 100px;
+}
+
+.wrapper6 { /*Auto placement by row*/
+    display: grid;
+    gap: 10px;
+    border: 2px solid rgb(255, 72, 0);
+    background-color: rgb(247, 203, 162);
+    grid-template-columns: repeat(4, 200px);
+    grid-auto-flow: row;
+    grid-auto-rows: 300px 100px;
+} 

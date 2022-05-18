@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Auto-placement in CSS Grid Layout</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="styles5.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+        </div>
+        <br>
+        <div class="wrapper2">  <!--Sizing rows in implicit grid using grid-auto-rows-->
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+        </div>
+        <br>
+        <div class="wrapper3"> <!--Sizing rows using minmax()-->
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four
+                <br>This cell
+                <br>Has extra
+                <br>content.
+                <br>Max is auto
+                <br>so the row expands.    
+            </div>
+            <div>Five</div>
+        </div>
+        <br>
+        <div class="wrapper4"> <!--Sizing rows using a track listing-->
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four </div>
+            <div>Five</div>
+            <div>Six</div>
+            <div>Seven</div>
+            <div>Eight</div>
+        </div>
+        <br>
+        <!--Auto placement by column-->
+        <div class="wrapper5">
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+            <div>Six</div>
+            <div>Seven</div>
+            <div>Eight</div>
+        </div>
+        <br>
+        <div class="wrapper6">
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+            <div>Six</div>
+            <div>Seven</div>
+            <div>Eight</div>
+            <div>Nine</div>
+            <div>Ten</div>
+            <div>Eleven</div>
+            <div>Twelve</div>
+        </div>
+        <br>
+
+    </body>
+</html>
